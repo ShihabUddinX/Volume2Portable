@@ -1,0 +1,636 @@
+﻿#RU Версия 1.1.9.470 (20.09.2025)
++Volume² будет поставляться только x64
+*Исправлено: отображалась некорректная иконка в трее при изменении DPI (#369)
+*Возможный фикс проблемы подключения BT устройств (#342)
++Добавлен пункт Активные приложения для Списка приложений (#340)
++Добавлена возможность выводить dBFS значение для хинтов и OSD текста (#362)
+*Запуск приложений не поддерживал регистр ключей (#348)
+*Исправлено сброс баланса (#360)
++Добавлена возможность установить устройство по умолчанию при помощи расписания (#337)
++Добавлена поддержка системных переменных (%TEMP%) для запуска приложений (#339)
+*Восстаноылена работа ключей командной строки (#338)
+*Список устройств не всегда обновлялся после гибернации(#201)
++Добавлена возможность добавлять устройства в список избранных. Этот список используется для контекстного меню в трее и для функции Следующее/Предыдущее устройство (#311)
++Добавлена поддержка мышек с вертикальным скролом (#309)
+*При использовании стандартного регулятора в трее повторный клик должен закрывать его (#298)
+
+#US Version 1.1.9.470 (20.09.2025)
++Volume² will be provided only in 64 bit
+*Fixed: Wrong tray icon was shown after changing DPI (#369)
+*Possible fix for refresh devices after connecting BT headphones (#342)
++Added "Active Applications" item for Change Volume for : Applicatio List (#340)
++Added support for dBFS value (tooltip and OSD text) (#362)
+*Fixed: Off mute did not work for logarithmic method (#366)
+*Fixed: Command line was broken and did not support case sensitive keys (#348)
+*Fixed: balance was changed when you do not expect this (#360)
++Added possibility to set default audio device from scheduler  (#337)
++Added support system variables for running application (#339)
+*Fixed command line keys /MUTE ALTDEVICE (#338)
+*Device may get missing after wake from hibernation(#201)
++Added ability to add devices to the favorite list. This list is used for tray context menu and Set Next/Prev Default Device function (#311)
++Added support for horizontal mouse scroll (#309)
+*Clicking on tray icon again while mixer is open (if left button single click set to volume mixer) should close the mixer (#298)
+
+#RU Версия 1.1.8.465 (31.12.2023)
++Добавлена возможность управлять Voicemeeter устройствами (#264)
++Добавлено изменение иконки в трее и экранного индикатора(OSD) для Dark Mode (#248)
+*Исправлено контекстное мен в Volume2PM
++Добавлена возможность управлять устройствами с поддержкой OSC протокола (#241)
++Новое действие для Горячих клавиш - Выключить все микрофоны (#225)
++Добавлена возможность управлять устройством записи по умолчанию (#207)
+*Исправлено управление громкость приложений если они не используют устройство по умолчанию
++Добавлена возможность изменить менеджер устройств по умолчанию (#210)
+*Исправлено обновление иконки в трее после подключения нового устройства
+*Исправлена ошибка с воспроизведением звука после изменения громкости (#94)
+*Исправлено некоректное поведение горячих клавиш (Win + RMB) при управлении альтернативным устройством (#183)
+*Исправлено управление громкостью над второй, третьей панелью задач (#181)
+*Исправлено автоопределение языка (#176)
++Добавлено автоматическое определение цвета шрифта в зависимости от цвета фона
+*Исправлен цвет шрифта для переключателей
+*Исправлен крэш программы для некоторых языков из-за неправильного перевода
+*Исправлена ошибка с подключением устройств (#168)
+*Исправлены ошибки связвнные с альтернативной иконкой в трее
++Добавлена возможность скрыть нективные устройства в Диспетчере аудио устройств
++Добавлена возможность установить устройство по умолчанию одиночным кликом в Диспетчере аудио устройств (включается в Пользовательских переменных - ADMApplyImmediately)
+
+#US Version 1.1.8.465 (31.12.2023)
++Implemented support Voicemeeter devices (#264)
++Added change tray/OSD skin for Dark mode (#248)
+*Fixed issue related to context menu in Volume2PM
++Added support for OSC protocol (#241)
++New hotkey action - Mute all microphones (#225)
++Added the ability to control the default recording device (#207)
+*Fixed application volume control when it is not on default audio device
++Custom sound settings was added (#210)
+*Fixed update tray icon after a new device was connected
+*Fixed an issue related to play sound after changing the volume (#94)
++Added per-device volume control method (#174)
++Added possibility to disable OSD for scheduler (#189)
++Added autoresize of Windows mixer (#182)
+*Improved Dark mode (#170)
+*Fixed behavior of hotkeys (Win + RMB) when controlling an alternative device (#183)
+*Fixed volume control over the second, third taskbar (#181)
+*Fixed autodetection System language (#176)
++Added automatic font color detection depending on background color
+*Fixed font color for checkboxes/radiobuttons 
+*Fixed program crash for some languages because of incorrect translation
+*Fixed issue related to device connection (#168)
+*Fixed issues related to alternative tray icon
++Added Show Inactive Devices option to Audio Device Manager
++Added set default device on single mouse click in Audio Device Manager (available in User Variables - ADMApplyImmediately)
+
+#RU Версия 1.1.7.449 (31.12.2021)
++Добавлена опция включения экрана (как дополнение отключения)
+*Исправлена повышеная загрузка ЦПУ при отсутствии интернета (#162)
+*Настройки интерфейса и пользовательские переменные перенесены в окно настроек
++Добавлена возможность переименовывать устройства в менеджере аудио устройств 
+*Улучшен внешний вид при включении темной темы (Windows 10, 11)
+*Исправлен внешний вид контекстного меню в трее для Windows 11
+*Исправлено отображение текста на некоторых OSD
++Добавлена возможность отображать иконку в трее для альтернативного устройства
+*Исправлена ошибка в расписаниях когда .(точка) используется в формате времени, как разделитель
+*Обновлен Менеджер аудио устройств
+*Исправлено отображение Экранного индикатора на удаленном рабочем столе
++Добавлена загрузка Истории с сайта программы
++Добавлена возможность управлять альтернативным устройством с командной строки (параметр ALTDEVICE)
+*Исправлено управление громкость основного устройства с командной строки
++Добавлено автоматическое определение языка основываясь на языке системы
++Добавлена возможность запуска задачи через POST запрос: /tasks/execute/id=taskId
+*Исправлены ошибки с GitHub #112, #119, #127, #129
+*Исправлено управление над панелью задач на 3 и более экранах
++Добавлено Действие - Запустить задачу для Горячих клавиш
++Добавлена новое состояние в задаче Включить/выключить звук - переключатель
+
+#US Version 1.1.7.449 (31.12.2021)
++Added function Turn On monitor
+*Fixed high CPU usage when offline (#162)
+*Moved Interface Settings and User Variables to main Settings screen
++Added possibility to rename devices using Audio Device Manager 
+*Improved dark mode (Windows 10, 11)
+*Fixed view of the context menu in the tray for Windows 11
+*Fixed show text on some OSD
++Added tray icon for alternative device
+*Fixed issue with Scheduler when .(dot) is use as time delimiter 
+*Updated Audio Device Manager
+*Fixed show OSD on RDP and low color depth screens
++Added the ability to load History from the site
++Multiple alternative devices can be used in Hotkeys
++Added possibility to control alternate device from command line (parameter ALTDEVICE)
+*Fixed change volume for main audio device from command line
++Language autodetection was implemented (Based on System language)
++Added support for POST request to execute task: /tasks/execute/id=taskId
+*Fixed issues from Github #112, #119, #127, #129
+*Fixed volume control under taskbar on 3 and more monitors
++Added Action - Run task to Hotkeys
++Added a new state for 'Mute On/Off' task - toggle
+
+#RU Версия 1.1.6.428 (31.12.2020)
+*Исправлены ошибки с GitHub #69, #88, #92, #93, #82, #98, #103, #105
+*Исправлена плавная прокрутка (Logitech SetPoint)
++Добавлена возможность запуска приложения без доступных аудио устройств в системе
++Добавлена сортировка в Расписание
++Добавлено события в Планировщике (на блокирование ПК, на разблокирование ПК, после простоя ПК)
+*Исправлен Peak Meter
++Добавлена поддержка нескольких мониторов с разными разрешениями для окна настроек
++Добавлены варианты автозагрузки: как программа или как задача
++Добавлена сортировка устройств
+*Исправлено дублирование в списке устройств
+*Исправлена загрузка имени автора скина в Peak Meter
++Добавлена опция Связать громкость устройств, при изменении основного устройства будет изменена громкость альтернативного и наоборот
++Добавлена опция DetectActiveMonitorMethod для определения активного монитора 0 - по активному окну, 1 - по позиции мыши (доступно в Config.ini)
+*Исправлена проблема с одинаковыми именами устройств, теперь сохраняются ИД
++Добавлена возможность задать позицию и размер Экранного индикатора для каждого экрана
+*Исправлена работа параметров командной строки
+*Изменен веб адрес блога
+*Исправлено управление балансом Windows 10
+*Исправлен сброс баланса в Windows XP
+*Исправлено управление громкостью выбранного приложения
+
+#US Version 1.1.6.428 (31.12.2020)
+*Fixed issues from GitHub #69, #88, #92, #93, #82, #98, #103, #105
+*Fixed Smooth scrolling from Logitech SetPoint
++Added possibility to load program without any audio devices(Windows 7 and higher)
++Added ordering to Schedules
++Added new periods for Scheduler (On Lock PC, On Unlock PC, After Idle Time)
+*Fixed PeakMeter
++Added support multiple monitors with different resolutions for Settings window
++Added Autorun types: As Task or As Program
++Added devices sorting
+*Fixed duplicating devices
+*Fixed loading Author name in Peak Meter
++Added option Lock Devices Volume, when you change volume of main device also will be changed volume of alternative and vice versa
++Added option how to detect active monitor DetectActiveMonitorMethod: 0 - by active window, 1 - by mouse position (available in Config.ini)
+*Fixed problem with the same devices' names, from this version will be stored ID
++Added possibility to set OSD position and size for each monitor
+*Fixed command line parameters
+*Changed blog address
+*Fixed balance control Windows 10
+*Fixed resetting balance on Windows XP
+*Fixed control volume of selected application
+
+#RU Версия 1.1.5.404 (31.12.2017)
+*Исправлена функция установки громкости для устройства с Расписания
+*Исправлена опция Сбросить баланс(50/50) в Горячих клавишах
+*Изменено количество шагов для регулирования баланса(было 36 стало 100)
+*Исправлен синий экран на Windows 10 FCU
+*Исправлена ошибка с запуском программы при помощи Горячих клавиш
+*Исправлена ошибка в расписаниях(не все задачи запускались по времени)
++Добавлена опция Отключать звук при нулевой громкости
++Добавлена опция альтернативной автозагрузки(пока что через Config.ini параметр ScheduleAutoRun=1 секция Main)
++Добавлена информация о подключенном диске на OSD
+*Исправлена Github ошибка #26
+*Исправлена Github ошибка #28
++Добавлена возможность устанавливать на горячие клавиши комбинации:MouseX1 + MouseMiddle, Mousex2 + MouseMiddle
++Добавлена опция отображать подсказку в трее при изменении громкости(теперь можно настроить подсказку как в Стандартном регуляторе %D: %V%)
+*Исправлено управление устройствами в Windows 10
+*Исправлено: Установить устройство по умолчанию для Windows 10
++Добавлен новый масштаб для OSD в 200% (для 4К дисплеев)
++Добавлена возможность установить период времени при выходе со спящего режима в Расписаниях
+*Исправлено отображение вкладки Улучшения при открытии Устройств воспроизведения
++Добавлены новые события для Горячих клавиш, включение и выключение громкости, как отдельная функция
++Добавлена поддержка повышенного масштаба иконки в трее(без перезагрузки)
++Добавлена поддержка загрузки параметров в работающую программу(/LoadConfig). Можно использовать в Расписаниях
++Добавлен возможность установить процент баланса при помощи Горячих клавиш
++Новый скин для трея Иконка устройства
+*Обновлен веб доступ к программе(Config.ini параметр UseRemoteServer)
++Добавлена эмуляция медиа клавиш в Горячие клавиши
++Добавлены параметры командной строки /exit и /profilefolder
++Добавлена опция проверять бета версии
+*Исправлено управление яркостью
++Добавлено отображение иконок устройства в окне Установить устройство по умолчанию
+*Исправлено управление через стандартный регулятор в трее, метод управления Таблица
+*Исправлено управление у края, параметр Начинать изменять громкость
++Добавлена опция выбора цвета для Экранного индикатора
+*Исправлено: Контекстное меню на Экранном индикаторе
+*Исправлено: Подсказка в трее для Windows 10
++Добавлен Индонезийский язык
+
+#US Version 1.1.5.404 (31.12.2017)
+*Fixed set volume for device from Task
+*Fixed Balanse Reset(50/50)
+*Changed count of steps when control balance to 100(was 36)
+*Fixed BSOD on Windows 10 FCU
++Added option Mute when volume is zero
++Added drive information on OSD
+*Fixed Github issue #26
+*Fixed Github issue #28
++Added new hotkeys combinations: MouseX1 + MouseMiddle, MouseX2 + MouseMiddle
+*Fixed set default device for Windows 10
+*Fixed Github issue #19 
++Added new tray skin - Device Icon
+*Updated web access(to enable use Config.ini parameter UseremoteServer)
++Added media keys
++Added colorization OSD skins
+*Fixed OSD context menu
+*Fixed Tool tip info for Windows 10
++Added Indonesian language
+
+#DE Version 1.1.5.404 (31.12.2017)
+*Behoben OSD-Kontextmenü
++Hinzugefügt Indonesischen Sprache
+
+#RU Версия 1.1.4.347 (10.08.2015)
++Добавлен новый тег для подсказок в трее/текст OSD - %DF - Устройство (Звуковая карта)
+*Исправлено отключение управления громкостью в полноэкранных приложениях
++Добавлен новый OSD skin Windows 10 с отображением имени устройства
+*Исправлены функции устройство по умолчанию и управление устройствами для Windows 10
++Добавлена задача Вкл/Выкл громкость в Расписания
+*Исправлено запуск задачи когда Время начала больше Время конца
++Добавлена опция отключения диапазона времени в Расписании
++Добавлена поддержка системных цветов(Windows 7/8/10), в Настройках интерфейса выбрать System
+*Исправлено: Ошибка при создании Расписания выполнять каждые...
++Добавлено: Скрывать окно управления у края по истечению заданного времени
+*Исправлено: Установка громкости в Расписании
++Добавлены события в Горячие клавиши, выровнять громкость для всех приложений
+*Исправлено отображение информации о персональной лицензии
+*Исправлено: регулировка громкости над второй панелью задач (на втором мониторе) не работало в полноэкранных приложениях
++Добавлен новый размер для иконки в трее 20px
+*Исправлена горизонтальная прокрутка в функции KatMouse
++Новый внешний вид настроек программы, а также обновлена иконка приложения
+*Исправлена функция воcстановление громкости при запуске программы
++Добавлена функция управления аудио устройствами(меню в трее)
++Добавлено действие Спящий режим на Горячие клавиши
++Добавлены события Горячих клавиш для управления громкостью активного приложения
++Добавлены параметры в Расписания: Начать в, Закончить в(выполнять задачу в диапазоне времени), Количество запусков
+/Удален баннер Помощь проекту
+*Исправлена загрузка скинов с ошибкой в структуре(в лог добавляется в каком файле ошибка)
++Добавлен расширенный список классов для функции KatMouse(только в Config.ini)
+*Исправлено: Открывались настройки программы после перезагрузки ПК на Win8
++Добавлена возможность исключать полноэкранные программы по маске (или папке)
++Добавлена возможность изменять размер OSD(по правой кнопке мыши)
++Добавлена опция залипания OSD у краев экрана
++Добавлена функция Отключать громкость средней кнопкой мы при управлении у края экрана
+*Исправлено: переустановка хука после выхода со спящего режима
++Добавлено: Отключение экранного индикатора(OSD), горячих клавиш, управление колесом мыши и управление у края экрана в полноэкранных приложениях
++Добавлена новая комбинация для горячих клавиш: Средняя кнопка мыши + Колесо
+*Исправлен запуск приложений с параметрами в Расписании и Горячих клавишах
++В Расписании добавлена возможность установить громкость для устройства
+*Сохранение опций Отключить Volume² (мышка, клавиатура)
+*Исправлено воспроизведение звука на Windows 8
+*Исправлено появление меню Пуск после изменения громкости
++Добавлена опция Запускать от имени Администратора
+
+#US Version 1.1.4.347 (10.08.2015)
++Added new tag %DF - Device (Sound Card)
+*Fixed disabling the volume control in full-screen applications
+*Fixed Set Default Device and Manage Devices for Windows 10
++Added task Mute on/off to Schedules 
+*Fixed run task when Start time above End time
++Added option disable schedule time range
+*Fixed Schedule task set volume Win 7 and high
++Added ResetVolume apps to Master on Hotkeys
+*Fixed snap to edge in PeakMeter
+*Fixed show license info after restart program
+*Fixed OSD preview step
+*Fixed: volume control over second Taskbar(on second screen) didn't work in fullscreen apps
++Added new size for tray icon 20px
+*Fixed horizontal scroll in KatMouse
++Updated main program icon, also changed UI icons
++Added option Manage devisec(disable/enable) to tray popup
++Added action Stand by to Hotkeys 
++Added options in the Schedule: Start to Finish(to perform the task in the time range)
+/Removed the banner with the project
+*Fixed loading of skins with an error in the structure(in the log is added in what file error)
++Added advanced list of classes for functions KatMouse(only in Config.ini)
+*Fixed: Open program settings after a reboot PC to Win8
++Added the ability to exclude full-screen programs on the mask (or the folder)
++Added the ability to change the size of the OSD(on right click)
++Added the option of sticking OSD at the edges of the screen
++Added function to Disable the volume of the middle button when we control at the edge of the screen
+*Fixed: reinstalling hook after resuming from hibernation
++Added: Disable on-screen display(OSD) menu, hot key, control mouse wheel and management at the edge of the screen in fullscreen applications
++Added a new combination for hot keys: the Middle mouse button + Wheel
+*Fixed application startup settings in the Schedule and keyboard shortcuts
++Schedule added the ability to set the volume for the device
+*Save options to Disable Volume 2 (mouse, keyboard)
+*Fixed audio playback on Windows 8
+*Fixed the appearance of the start menu after you change the volume
++Added option to Run as Administrator
+
+#DE Version 1.1.4.347 (10.08.2015)
++Added new tag %DF - Device (Sound Card)
++Hinzugefügt Optionen im Zeitplan: Starten, zu Beenden(Aufgabe im Bereich der Zeit)
+/Gelöscht, Banner-Hilfe-Projekt
+*Fixed deaktivieren Sie die Lautstärke im Vollbild-Anwendungen
+*Behoben: der Download Skins mit dem Fehler in der Struktur(log Hinzugefügt, in welcher Datei der Fehler)
++Hinzugefügt расштренный Liste der Klassen für die Funktion KatMouse(nur in der Config.ini)
+*Behoben: Öffneten sich die Programm-Einstellungen nach dem Neustart des PCs auf Win8
++Zusätzliche Möglichkeit ausschließen, Vollbild-Programme, die von der Maske (oder Ordner)
++Zusätzliche Möglichkeit, die Größe des OSD(nach der rechten Maustaste)
++Hinzugefügt Option Sticky OSD an den Rändern des Bildschirms
++Hinzugefügt wurde die Funktion deaktivieren, Deaktivieren Sie die Lautstärke mit der mittleren Maustaste wir die bei der Verwaltung an den Rand des Bildschirms
+*Behoben: der Neuinstallation die Huka nach der Veröffentlichung mit dem Ruhezustand
++Hinzugefügt: Deaktivieren Sie die OSD-Anzeige(OSD), Tastenkombinationen, die Verwaltung der Rad-Maus und-Verwaltung an den Rand des Bildschirms in der Vollbild-Anwendungen
++Eine neue Kombination für Tastenkombinationen: Mittlere Maustaste + Rad
+*Fixed starten von Anwendungen mit den Parametern, die im Zeitplan und Hotkeys
++Im Zeitplan hinzufügen der Möglichkeit, die Lautstärke für das Gerät
+*Speichern der Optionen Deaktivieren Volume2 (Maus, Tastatur)
+*Fixed Sound-Wiedergabe auf Win8
+*Fixed Aussehen Startmenü nach dem ändern der Lautstärke
++Hinzugefügt wurde die Option als Administrator Ausführen
+
+#RU Версия 1.1.3.247 (10.02.2013)
++Добавлена функция быстрого переключения устройства по умолчанию (вызывается с трея)
+*Исправлена ошибка с подвисанием ПК при подключении USB устройств(на некоторых ПК с Win7 x64)
+*Исправлена функция управление громкостью у края экрана, когда в системе больше одного монитора
++Добавлена функция восстановления громкости при запуске программы(для 7, когда на одном ПК несколько пользователей)
++Добавлено еще одно место управления громкостью при помощи колеса: Вся область экрана
++Добавлена возможность устанавливать на горячие клавиши комбинации: MouseX1 + MouseWheelUp, MouseX1 + MouseWheelDown, MouseX2 + MouseWheelUp, MouseX2 + MouseWheelDown
++Добавлена возможность удалять папку с OSD скином с самой программы
++В трее добавлена опция «Установить устройство по умолчанию»
++Добавлена функция отключения Volume²
++Добавлен режим "гаджета", OSD отображается постоянно
++Добавлено меню на OSD(всегда показывать) "Поверх всех окон"
++Добавлена функция отключение управления громкость у края экрана в полноэкранных приложениях
++Добавлена поддержка файла Gloss.png для OSD 
++Добавлена возможность запуска любого файла по горячим клавишам
+*Исправлена ошибка с галочкой звук вкл\выкл в системном трее
++Появилась возможность перемещать OSDTrackBar при предпросмотре
+*OSDTrackBar исправлена ошибка с размерами при предпросмотре
++Добавлена новая задача в событиях Установить яркость
++Добавлено поле параметр в горячие клавиши
++Добавлена команда на горячие клавиши установить % громкости, установить устройство по умолчанию
+*Исправлено сохранение списков приложений, katmouse, fullscreen
+*Исправлено удаление записей с таблицы громкости
++Добавлено в события установку баланса и выполнить после запуска приложения
++На горячие клавиши добавлена функция Отключить громкость всех кроме активного приложения
++Добавлены настройки скина OSD
+*Исправлены ошибки в инсталляторе
+*Исправлена ошибка в логарифмическом методе управления
++Добавлен параметр при запуске DEBUG, который выводит все ошибки программы на экран(так же ошибка записывается и в лог файл)
+*Исправлено поведение OSD (отображать всегда) на подключение USB, изменение яркости и др.
+/Удален файл Volume2DS.exe(отвечал за установку аудиоустройства по умолчанию), функционал перенесен в основной модуль
++Добавлена опция авто перезагрузки хуков(на некоторых системах он часто слетает, после чего перестает работать программа)
++Добавлена функция на горячие клавиши «Установить % яркости»
+*Исправлено: После перезагрузки оболочки(explorer.exe) пропадала иконка в трее
++Добавлен индикатор пикового уровня звука поверх экранного индикатора(пример Candy Apple Red)
++Добавлена возможность устанавливать действие на комбинации клавиш: Win+Up, Win+Down, Win+Left, Win+Right
+*Исправлено: OSD TrackBar "заберал" на себя фокус 
++Добавлены события на горячие клавиши: Выключить ПК, Перезагрузить ПК, Выключить монитор(для мониторов поддерживающих StandBy)
+*Исправлено: Ошибка при управлении списком приложений на х64 ОС
+*Исправлено: PeakMeter размещение на втором мониторе
++Добавлена привязка PeakMeter к устройству по умолчанию(автоматическое переключение)
+*Изменено место хранения настроек(файл Config.ini), теперь, если программа не устанавливалась через инсталятор настройки будут храниться в папке с программой
+*Исправлено удаление скинов(не обновлялся список после удаления)
++Добавлена возможность управления устройствами записи(Win7/Win8)
+*Исправлена ошибка с отображением стандартного регулятора громкости(когда включено Автоскрытие панели задач)
+
+#US Version 1.1.3.247 (10.02.2013)
+*Fixed bug with hang system when connected USB device (on some PCs with Win7 x64)
++Added function disable Volume²
++Added mode OSD "gadget" (OSD always shows)
++Added feature repairing the volume when you start the program (for Win7, when the some users on single PC)
++Added one more place volume control with the wheel: Anywhere on the screen
++In the system tray added option set default device
++Added function Mute all except active application on hotkeys
++Added OSD skin options
++Added new parameter for command string DEBUG (All errors shown on screen)
++Added option auto restart hooks
++Added new function to hotkeys: Set brightness percent
++Added feature Peak Meter on OSD
++Added keys wiche you can set as hotkeys in Volume²: Win+Up, Win+Down, Win+Left, Win+Right
++Add events on hotkey: Power off PC, Reboot PC, Turn off monitor(only for StandBy)
+*Fixed bug with volume control in application list(x64) 
+*Fixed: PeakMeter placement on the second monitor
++Added PeakMeter binding to the device by default (automatic switching)
++Added ability to control the recording devices(Win7/Win8)
+ 
+#RU Версия 1.1.2 (08.01.2012)
+*Уменьшен обьм занимаемой памяти до 3-4Мб
+*Исправлена ошибка зависание ОС при использовании мышек с дополнительными кнопками
+*Изменен дизайн программы
++Добавлен индикатор громкости (доступен в меню в трее)
++Добавлены новые языки интерфейса: Немецкий, Сербский, Португальский, Бразильский, Армянский
++Имя и размер шрифта хранятся в файле языка для каждой формы отдельно, что позволяет установить свой шрифт
++Добавлено управление балансом каналов со всплывающего окна в трее
+*Отключение звука в полноэкранных приложениях при включенной соответствующей опции
++Включение кнопки Применить/Ок при изменении настроек
++Добавлено управление громкостью активного и выбранного приложения (Vista/7)
+*Ошибка при удалении приложения со списка в функции "Отключать громкость в полноэкранных приложениях"
++Добавлена загрузка всех устройств воспроизведения в список устройств (неактивные подсвечиваются серым цветом)
++Добавлена перезагрузка списка устройств, при изменении их состояния (отключение/включение)
+*Фокус не перемещается на всплывающее окно у края экрана при клике на нем мышкой
++Добавлено оповещение об извлечении/вставке USB флешки при помощи OSD
+*Не работали чекбоксы дней недели в расписаниях
+*Не срабатывали события выполнять "Ежедневно"
++Окно "Микшер громкости" открывается в правом нижнем углу (или если панель задач не внизу - в углу, где размещен трей) (Vista/7)
+*Загрузка 32 и 64 битных приложений в список процессов (во всех доступных местах)
++Добавлено отображение OSD при изменении яркости экрана при помощи горячих клавиш
++Добавлена функция установки первоначальной яркости на горячие клавиши
++Добавлено вывод OSD при изменении громкости в системе XP/Vista/7
++Горячие клавиши на Pause, ScrolLock, Home, Insert, PageUp, PageDown, Del, End без клавиш модификаторов
+*Координаты OSD теперь с плавающей точкой, улучшена точность позиционирования
++Добавлена функция отображение состояния батареи на горячие клавиши
++Добавлена функция управления каждым каналом, что позволило не сбрасывать соотношение громкости при установке ее в 0
++Новые команды для CMD '/?', 'INC n', 'DEC n', где n - число от 0 до 100 - процент громкости
++Добавлена возможность установки устройства по умолчанию (доступна для установки на горячие клавиши)
++Добавлена загрузка истории версий для каждого языка отдельно
++Добавлена подсветка устройства по умолчанию в списке устройств
++Добавлены цветовые схемы для окна настроек
++Добавлена возможность установить дополнительные кнопки мыши в сочетании с кнопками модификаторами в качестве горячих клавиш (Ctrl + MouseX1), работает длинный клик
++Добавлена опция вывода OSD на экран, где находится активное окно
++Появилась возможность управлять каждым каналом отдельно (полезно для 5.1 и 7.1 систем)
++Новое событие для расписаний: выполнять при смене аудиоустройства (полезно при подключении наушников)
+
+#US Version 1.1.2 (08.01.2012)
+*Decreased used memory to 3-4 Mb
+*Fixed bug when using mouse with extra buttons
+*Changed appearance settings window
++Added volume indicator (available on the menu in system tray)
++Added new interface languages: German, Serbian, Portuguese, Brazilian, Armenian
++Font name and size stored in a file language for each form separately, which allows you to set your font
++Added balance control channels in system tray pop-up window
+*Fixed sound muting in full-screen applications with option is enabled
++Enable Apply/OK button when settings are changed
++Added volume control chosen and active applications (win7)
+*Error deleting application from list in the "Turn off the volume in full-screen applications"
++Added loading of all playback devices in the device list (highlighted in gray inactive)
++Added reload device list when you change their status (enable / disable)
+*Focus is not moving in a popup window at the edge of the screen when you click mouse on it 
++Added warning about extracting / inserting USB flash drive using OSD
+*Not working checkboxes weekday schedules
+*Do not execute the event worked well, "Everyday"
++Window "volume mixer" opens in the lower right corner (or if the taskbar is not at bottom - in the corner where the tray is available) (Vista / 7)
+*Load 32 and 64 bit applications in the process list (available in all locations)
++Added display OSD when changing screen brightness with hotkeys
++Added function set original brightness hotkeys
++Added output OSD when changing volume in the system XP/Vista/7
++Keyboard shortcuts to Pause, ScrolLock, Home, Insert, PageUp, PageDown, Del, End keys without modifiers
+*Coordinates OSD now float, improved positioning accuracy
++Added battery status display for hotkeys
++Added function to control each channel, allowing the ratio of the volume is not reset when you install it to 0
++New command to CMD'/?', 'INC n', 'DEC n', where n - number from 0 to 100 - the percentage of volume
++Added ability set default device (available for installation on the hotkeys)
++Added load version history for each language separately
++Added highlighting the default device in the device list
+
+#RU Версия 1.1.1 (28.06.2011)
++Добавлена поддержка Unicode в программе
++Добавлено автоматическое обновление списка устройств при: добавлении, удалении или переименовании устройств
++Добавлена возможность управлять устройством по умолчанию (Vista/7)
++Добавлены новые языки интерфейса: Болгарский, Греческий, Китайский
++Иконка флага, хранится в файле с переводом
+*Исправлена ошибка стек оверфлов, при установке галочки "Изменять вид курсора" на закладке "Управление у края"
+*Лог файл хранится в папке с настройками, раньше - в папке с программой
+*Исправлена ошибка с утечкой памяти, при долгом использовании программы
++Добавлена возможность открывать регулятор громкости (микшер громкости) через двойной клик мышкой или клик средней кнопкой мыши, на иконке в трее
+*Подправлен длинный клик(остановка управления при перемещение курсора с иконки)
++Добавлена функция автоматической перезагрузки списка скинов, OSD скинов и звуков, при добавлении в папку новых файлов
++Добавлены новые OSD скины
++Добавлен список приложений (на закладке "Управление у края") в которых управление происходит альтернативным устройством
++В расписании добавлено новое событие "Выполнять при выходе из спящего режима" 
++Добавлено управление громкостью с командной строки. Поддерживаемые параметры: MUTE - отключить звук; UNMUTE - включить звук; Число от 0 до 100 - установить процент громкости
+*Исправлено. Если отключить "Вращая колесо мыши над", то не работает управление громкостью при включенном чекбоксе "Вращая колесо мыши (в любой части экрана)"
+
+#RU Версия 1.1.0 (16.04.2011)
+*Исправлена функция отключения громкости в полноэкранных приложениях (не всегда срабатывала)
+/Скрыта опция путь хранения параметров (место хранения выбирается при установке программы или если portable, то в папке с программой)
++Добавлена опция «Выключать звук средней кнопкой мыши»
+ *Исправлено обновление информации о громкости при переключении на альтернативное устройство (у края экрана, в трее)
++Добавлена функция отключения экранного меню при управлении у края экрана
++Перенесены настройки всплывающей подсказки на закладку "Системный трей"
+/Удалена закладка "Дополнительные"
+*Переделан выводимый текст всплывающей подсказки, теперь это строка с тегами
+*Сократилось время одиночного клика в трее (раньше равнялось времени двойного клика)
+*Исправлено управление балансом для Vista/7
+*Ускорен вывод подсказки в трее и возле курсора
++В редакторе таблицы громкости добавлена возможность изменять значения мышкой на графике
+*Исправлено отображение интерфейса настроек при увеличенном масштабном коэффициенте (dpi)
++Добавлена функция подсветки пункта меню в трее, который срабатывает по двойному клику на иконке
++Добавлена функция включающую/выключающую длинный клик на значке программы в трее
++Добавлено расписание, при помощи которого можно создавать задачи, которые будут выполняться в определенное время и/или с определенным периодом. Например: при старте программы установить громкость 10 %
+*Исправлен длинный клик левой/правой на иконке в трее, который отвечает за увеличение/уменьшение громкости (не работало на ноутбуках)
++Добавлено вывод экранного меню при изменении баланса каналов горячими клавишами
++Добавлено применение параметров двойным кликом: Язык интерфейса, Скины, Экранное меню
+*Исправлено. Диалог выбора файлов, на Vista/7 отображается в "новом" стиле
+
+#RU Версия 1.0.9 (27.12.2010)
+*Теперь можно переопределить стандартные мультимедиа клавиши
+*Горячие клавиши. Когда строка "Действие" не заполнена, то неправильно назначались горячие клавиши
+*Исправлено. Не отображалась громкость (при изменении) альтернативного устройства на Vista/7
++Добавлено название звуковой карты в списке устройств
++В список альтернативных устройств добавлен вариант "Нет", при выборе которого дизейблится возможность включения регулятора альтернативного устройства на закладке "События мыши"
+*Исправлено. На XP выключение звука срабатывало не на том устройстве
++Добавлена возможность управлять альтернативным устройством при помощи горячих клавиш
+*Экранное меню. Координаты обновляются при перетаскивании. Отключена возможность перетаскивать, когда стоит галочка "В центре"
++Добавлены горячие клавиши на управление балансом каналов
++Добавлен новый метод управления громкостью "Таблица". Теперь все шаги громкости можно настроить самостоятельно
++Добавлена возможность добавлять приложения из процессов (в окнах "Список приложений")
++Добавлена возможность добавлять приложения путем перетаскивания на них указателя мыши (в окнах "Список приложений")
+*В полноэкранных приложениях отключаются только действия мыши, горячие клавиши работают
++При первом запуске программы(Vista/7) устанавливается устройство для управления, то которое стоит по умолчанию в системе
++Portable версия считается та, у которой файл настроек Config.ini лежит в папке с программой
+
+#RU Версия 1.0.8 (30.11.2010)
++Добавлены новые скины Chameleon Light и VolumeControl2 win7
++Добавлена работа с несколькими звуковыми картами
++Добавлены настройки на закладке "Управление у края"
+*Устранена ошибка возникающая, когда в системе нет драйверов на звуковую карту
++Добавлено управление яркостью экрана с помощью горячих клавиш
+*Исправлено: при изменении устройства для управления не подгружался баланс каналов
+*Исправлено: управление всеми устройствами в системе (раньше только с стерео, то есть с 2 каналами)
++Добавлен метод управления у края экрана: колесо и движение
++Добавлено отображение текущей громкости при управлении у края экрана
+*Подправлена функция "Прокручивать содержимое под указателем мыши" (Opera, Feedreader)
++Добавлен новый тип экранного меню (OSD): трекбар
+*Исправлено: иногда поле "Шрифт", на закладке "Экранное меню", становилось пустым
+*Позиция экранного меню отсчитывается от центра, а не от верхнего левого угла (как было раньше)
++Добавлена возможность добавлять приложения, в которых не будет работать функция "Отключать управление громкостью в полноэкранных приложениях"
++Добавлена возможность добавлять приложения, в которых будет/не будет работать функция "Прокручивать содержимое под указателем мыши"
+*Исправлено: хранение параметров в многопользовательском режиме
++Добавлено отображение текущей громкости, при выключенном звуке, на экранном меню(OSD) в стиле "Скин"
+*При изменении баланса каналов и нажатии отмена, он восстанавливается в исходное положение
+/Удален тип экранного меню(osd) "Прямоугольник"
++Добавлены параметры в тип экранного меню "Текст"
+*Исправлены ошибки в экранных меню "Скин" и "Трекбар"
++Добавлена возможность множественного выбора границ экрана на закладке "Управление у края"
+
+#RU Версия 1.0.7 (15.10.2010)
++Добавлено логарифмическое изменение громкости с учетом скорости изменения громкости
++Добавлена функция прокрутки содержимого под указателем мыши (функция с KatMouse)
++Добавлена функция уведомления о новой версии, на закладке "Системные"
+*Исправлено регулирования громкости при "Вращении колеса мышки над Панелью задач" с учетом размещения панели задач (сверху, снизу, справа, слева)
+*Исправлено отображение "стандартного" регулятора громкости с учетом размещения панели задач (сверху, снизу, справа, слева)
+*Исправлено: загрузка процессора при движении мышки
+*При отображении экранного меню(OSD), на него не перемещается фокус
+*Полностью переделан инсталлятор программы
+*Язык, выбранный при установке программы, будет включен по умолчанию в программе
+*При установке добавлена новая галочка "Автозапуск", которая переносится в программу
+*Исправлена работа с альтернативным устройством в Vista/Win 7
+*Исправлена ошибка с назначением нескольких горячих клавиш на одно действие 
+*Немного изменен внешний вид окна настроек
+*Исправлена работа системной кнопки "Закрыть". Теперь она выполняет свое предназначение
+*Не всегда срабатывало выключение (перезагрузка) компьютера 
++Добавлены новые места для управления громкостью: область рабочего стола (когда он виден), область заголовка любого окна
++На закладке "Системные" добавлена функция место хранения параметров
++Добавлен новый стиль экранного меню "Скин"
+
+#RU Версия 1.0.6 (15.09.2010)
++Добавлен новый скин Bars4
++Добавлены новые события для горячих клавиш: Громкость 10% ... Громкость 100%
+*Переделана работа с горячими клавишами. Теперь на одно действие можно поставить несколько комбинаций клавиш
+*Изменен принцип автопредпросмотра экранного меню(OSD) 
++Добавлена возможность с помощью клавиши F5 перезагрузки звуков, языков и скинов без перезапуска программы
++На закладке "Скины" добавлена кнопка, позволяющая установить рекомендуемое для выбранного скина значение числа шагов
++В настройках экранного меню появилась обводка букв текста и рамка у прямоугольника
++При закрытии окна с настройками, если были произведены изменения, выдается сообщение "Сохранить изменения?"
++Добавлена функция определения списка доступных устройств для Vista/Win 7
+*Интерфейс адаптирован под повышенный системный масштаб для Vista/Win 7
++Доработана поддержка всех функций для Vista/Win 7
++Добавлена поддержка горячей клавиши Win для отключения звука
+*Исправлена ошибка с русскими шрифтами на некоторых ПК (крякозяблы)
+*Исправлено: не воспроизводится звук (не показывается OSD) при изменении громкости на "стандартном" регуляторе (одиночный клик на значке)
+*Исправлена проблема с выскакиванием меню Пуск, при установке горячей клавиши Win
+*Исправлена ошибка в подсказке при управлении громкостью альтернативного устройства (отображалось основное)
+*Изменен вид "стандартного" регулятора
+
+#RU Версия 1.0.5 (04.09.2010)
+*Исправлен баг с не сохранением порядка всплывающей подсказки
++Новые скины как всегда присутствуют
++Добавлен стиль подсказки - Обычный. Отображается в трее и при движении мышки у края экрана
++Добавлено отключение изменение курсора при движении мышки у края экрана
++добавлена функция проверки последней версии программы
++Добавлена возможность выбора экрана, на котором показывать "Экранное меню" (OSD)
++Добавлен белорусский язык (экспериментальный, кто хочет, и главное знает, может перевести и прислать мне)
+
+#RU Версия 1.0.4 (21.08.2010)
+*Начата модификация программы под Vista/Win 7
+*Исправлена реакция на нажатие Win клавиши
+*Исправлена ошибка (редкая) при закрытии программы
++Добавлены новые скины
++Добавлен новый стиль экранного меню в виде индикатора 
++Добавлено новое место для управления громкостью - область системного трея
++Альтернативное устройство. При нажатии горячей клавиши, в трее показывается текущий уровень громкости альтернативного устройства
++Добавлена горячая клавиша Win для управления громкостью в сочетании с колесом
++Добавлен длинный клик: левая увеличить громкость, правая уменьшить громкость. Учитывается галочка Инверсное изменение
++Добавлено выключение звука при помощи мыши в любом месте экрана
+*Изменена шкала скорости изменения громкости, теперь это количество шагов
+/Удалено логарифмическое изменение громкости
+
+#RU Версия 1.0.3 (01.08.2010)
++Добавлено альтернативное устройство для управления
++Добавлено управление громкостью движением мыши у края экрана
++Добавлено отключение управления громкостью в полноэкранных приложениях
++Добавлены новые скины и звуки
+
+#RU Версия 1.0.2.final (03.07.2010)
+* Исправлены мелкие ошибки
+* При изменении языка интерфейса он изменяется при нажатии кнопки "Применить"
++ Добавлена проверка на запущенную версию, если таковая имеется, вторая копия не запускается
+* Исправлен перевод на английский (Misha v.3)
+* Исправлена работа с горячими клавишами
++ При изменении громкости добавлено воспроизведение звука, выбранного пользователем
+* Переведено контекстное меню в трее
+* Исправлена функция "Запускать программу при старте ОС"
+* Немного переделан интерфейс программы
+* В разделе скины сделан быстрый пред просмотр
+* Исправлена функция "Инверсное изменение громкости"
+* В разделе экранное меню добавлен выбор шрифта и его параметров
+
+#RU Версия 1.0.1 (23.04.2010)
+* При выключении звука с включенной галочкой "Отображать стандартный значок громкости" этот значок появлялся
+* Экранное меню не на всех мониторах становилось в центр
+* Экранное меню работает с указанием координат
+
+#RU Версия 1.0.0 (30.01.2010)
++ Первая версия. Релиз удался :)

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLskinSettings>
+  <Info>
+    <Author>Andy Frostheart</Author>
+    <WebSite>vk.com/jfallenx</WebSite>
+    <SkinVersion>3.0</SkinVersion>
+  </Info>
+  <OSD>
+    <!--Orientation: BitMoveUp, BitMoveRight, BitStripBottom, BitStripRight, Horizontal, Vertical-->
+    <!--LayerIndex: -1 - plNone, 0 - plAfterBack, 1 - plAfterAnimation, 2 - plAfterMeter, 3 - plAfterText, 4 - plAfterDigits, 5 - plAfterGlass-->
+    <!--Color: #AARRGGBB-->
+    <!--Alignment: 0 - taLeft, 1 - taCenter, 2 - taRight-->
+    <FadeSteps>42</FadeSteps>
+    <ShowSteps>42</ShowSteps>
+    <Colorization>true</Colorization>
+    <!--Value format: #AARRGGBB. -1 - Use system color-->
+    <ColorizationColor>-16746281</ColorizationColor>
+    <Background Colorize="true"/>
+    <Meter X="150" Y="0" Orientation="HORIZONTAL" Min="0" Max="100" HideOnMute="false" Colorize="true"/>
+    <MeterMute X="150" Y="0" Orientation="HORIZONTAL" Min="0" Max="100" Colorize="true"/>
+    <MeterEffect Enable="false" Orientation="HORIZONTAL" Min="0" Max="0" LayerIndex="0" HideOnMute="false" X="0" Y="0" Colorize="false" FileName=""/>
+    <MeterMuteEffect Enable="false" LayerIndex="0" X="0" Y="0" Colorize="true"/>
+    <DigitalMeter Orientation="BITSTRIPBOTTOM">
+      <Hundreds X="110" Y="130" HideZero="true"/>
+      <Tens X="120" Y="130" HideZero="true"/>
+      <Tens1 X="120" Y="130"/>
+      <Units X="130" Y="130" HideZero="false"/>
+      <Units1 X="130" Y="130"/>
+      <Units2 X="130" Y="130"/>
+    </DigitalMeter>
+    <PeakMeter Enable="false" LayerIndex="-1" Colorize="false" Style="MONO" Orientation="HORIZONTAL" Max="-1">
+      <LeftChannel X="0" Y="0" Inverse="false"/>
+      <RightChannel X="0" Y="0" Inverse="false"/>
+    </PeakMeter>
+    <Text Enable="false" X="0" Y="0" Format="%d%%" FormatMute="%d%%" Alignment="1" HideOnMute="true" LayerIndex="-1">
+      <Font Size="0" Color="#FFFFFFFF" ColorMute="#FFFFFFFF" Name="Tahoma" Bold="false" Italic="false"/>
+    </Text>
+    <NotificationText Enable="false" X="0" Y="0" Width="0" Height="0" Alignment="0" LayerIndex="-1">
+      <Font Size="16" Color="#FF000000" Name="Tahoma" Bold="false" Italic="false"/>
+    </NotificationText>
+    <CDDriveLetter Enable="false" X="0" Y="0" Alignment="0" LayerIndex="-1">
+      <Font Size="16" Color="#FF000000" Name="Tahoma" Bold="false" Italic="false"/>
+    </CDDriveLetter>
+    <USBDriveLetter Enable="false" X="0" Y="0" Alignment="0" LayerIndex="-1">
+      <Font Size="16" Color="#FF000000" Name="Tahoma" Bold="false" Italic="false"/>
+    </USBDriveLetter>
+    <USBFriendlyName Enable="false" X="0" Y="0" Alignment="0" LayerIndex="-1">
+      <Font Size="16" Color="#FF000000" Name="Tahoma" Bold="false" Italic="false"/>
+    </USBFriendlyName>
+  </OSD>
+  <Layers/>
+</XMLskinSettings>
