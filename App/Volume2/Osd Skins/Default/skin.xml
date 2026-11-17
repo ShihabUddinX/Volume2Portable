@@ -32,25 +32,6 @@
       <Y>49</Y>
     </MeterPosition>
   </MeterEffect>
-  <PeakMeter>
-    <ShowPeakMeter>true</ShowPeakMeter>
-    <!--Available values: BitStripBottom, BitStripRight, Horizontal-->
-    <MeterOrientation>horizontal</MeterOrientation>
-    <MeterMax>9</MeterMax>
-    <MeterStyle>stereo</MeterStyle>
-    <!--Available values: -1 - plNone, 0 - plAfterBack, 1 - plAfterAnimation, 2 - plAfterMeter, 3 - plAfterText, 4 - plAfterDigits, 5 - plAfterGlass-->
-    <LayerIndex>5</LayerIndex>
-    <MeterLeftInvert>true</MeterLeftInvert>
-    <MeterRightInvert>false</MeterRightInvert>
-    <MeterLeftPosition>
-      <X>33</X>
-      <Y>182</Y>
-    </MeterLeftPosition>
-    <MeterRightPosition>
-      <X>123</X>
-      <Y>182</Y>
-    </MeterRightPosition>
-  </PeakMeter>
   <Text>
     <ShowText>false</ShowText>
     <TextPosition>

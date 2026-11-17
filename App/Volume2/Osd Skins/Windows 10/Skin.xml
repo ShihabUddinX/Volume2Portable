@@ -3,11 +3,21 @@
   <Info>
     <Author>Windows</Author>
     <WebSite>http://www.microsoft.com/</WebSite>
-    <SkinVersion>2.0</SkinVersion>
+    <SkinVersion>1</SkinVersion>
   </Info>
   <OSD>
-    <!--Orientation: BitMoveUp, BitMoveRight, BitStripBottom, BitStripRight, Horizontal, Vertical-->
-    <!--LayerIndex: -1 - plNone, 0 - plAfterBack, 2 - plAfterMeter, 3 - plAfterText, 4 - plAfterDigits, 5 - plAfterGlass-->
+    <!--Available values: BitMoveUp, BitMoveRight, BitStripBottom, BitStripRight, Horizontal, Vertical-->
+    <MeterOrientation>BitMoveRight</MeterOrientation>
+    <MeterMin>0</MeterMin>
+    <MeterMax>225</MeterMax>
+    <MeterPosition>
+      <X>63</X>
+      <Y>43</Y>
+    </MeterPosition>
+    <FadeSteps>28</FadeSteps>
+    <ShowSteps>40</ShowSteps>
+    <HideMeterOnMute>false</HideMeterOnMute>
+    <!--Available values: BitStripBottom-->
     <DigitalMeterOrientation>BitStripBottom</DigitalMeterOrientation>
     <DigitalMeterHideZeroUnits>false</DigitalMeterHideZeroUnits>
     <DigitalMeterHideZeroTens>true</DigitalMeterHideZeroTens>
@@ -36,22 +46,46 @@
       <X>-1</X>
       <Y>-1</Y>
     </DigitalMeterPositionUnits2>
-    <FadeSteps>28</FadeSteps>
-    <ShowSteps>40</ShowSteps>
-    <Colorization>false</Colorization>
-    <!--Value format: #AARRGGBB. -1 - Use system color-->
-    <ColorizationColor>-16731500</ColorizationColor>
-    <Background Colorize="true"/>
-    <Meter X="63" Y="43" Orientation="BitMoveRight" Min="0" Max="225" HideOnMute="false" Colorize="true"/>
-    <MeterMute X="63" Y="43" Orientation="BitMoveRight" Min="0" Max="225" Colorize="true"/>
-    <MeterEffect Enable="true" Orientation="BitStripBottom" Min="0" Max="3" LayerIndex="0" HideOnMute="true" X="16" Y="39" Colorize="true"/>
-    <MeterMuteEffect Enable="false" LayerIndex="0" X="0" Y="0" Colorize="true"/>
   </OSD>
+  <Media Enable="true">
+    <Cover Enable="true" X="290" Y="10" Size="60" Radius="2"/>
+    <Title Enable="true" X="10" Y="20" Alignment="0" MaxWidth="280">
+      <Font Size="14" Color="#FFFFFFFF" Name="Segoe UI" Bold="false" Italic="false"/>
+    </Title>
+    <Artist Enable="true" X="64" Y="48" Alignment="0" MaxWidth="280">
+      <Font Size="13" Color="#FFFFFFFF" Name="Segoe UI" Bold="false" Italic="false"/>
+    </Artist>
+    <PlayPause Enable="true" X="23" Y="35" Image="Media_PlayPause.svg">
+      <Click Grow="5"/>
+    </PlayPause>
+    <Progress Enable="true" X="10" Y="72" Width="270" Height="3" TrackColor="#4DFFFFFF" FillColor="#FFFFFFFF">
+      <Click Grow="6"/>
+    </Progress>
+    <Time Enable="false" X="350" Y="83" Alignment="2" MaxWidth="0">
+      <Font Size="12" Color="#CCFFFFFF" Name="Segoe UI" Bold="false" Italic="false"/>
+    </Time>
+  </Media>
+  <MeterEffect>
+    <ShowMeterEffect>true</ShowMeterEffect>
+    <!--Available values: BitMoveUp, BitMoveRight, BitStripBottom, BitStripRight, Horizontal, Vertical-->
+    <MeterOrientation>BitStripBottom</MeterOrientation>
+    <MeterMin>0</MeterMin>
+    <MeterMax>3</MeterMax>
+    <!--Available values: -1 - plNone, 0 - plAfterBack, 1 - plAfterAnimation, 2 - plAfterMeter, 3 - plAfterText, 4 - plAfterDigits, 5 - plAfterGlass-->
+    <LayerIndex>0</LayerIndex>
+    <HideMeterEffectOnMute>true</HideMeterEffectOnMute>
+    <MeterPosition>
+      <X>16</X>
+      <Y>39</Y>
+    </MeterPosition>
+  </MeterEffect>
   <PeakMeter>
     <ShowPeakMeter>true</ShowPeakMeter>
+    <!--Available values: BitStripBottom, BitStripRight, Horizontal-->
     <MeterOrientation>horizontal</MeterOrientation>
     <MeterMax>100</MeterMax>
     <MeterStyle>mono</MeterStyle>
+    <!--Available values: -1 - plNone, 0 - plAfterBack, 1 - plAfterAnimation, 2 - plAfterMeter, 3 - plAfterText, 4 - plAfterDigits, 5 - plAfterGlass-->
     <LayerIndex>0</LayerIndex>
     <MeterLeftInvert>false</MeterLeftInvert>
     <MeterRightInvert>false</MeterRightInvert>
@@ -77,12 +111,13 @@
     <!--Value format: #AARRGGBB-->
     <ColorMute>#FFFFFFFF</ColorMute>
     <FormatMute>%DF</FormatMute>
-    <!--Alignment: 0 - taLeft, 1 - taCenter, 2 - taRight-->
+    <!--Available values: 0 - taLeft, 1 - taCenter, 2 - taRight-->
     <Alignment>0</Alignment>
     <FontName>Segoe UI</FontName>
     <FontBold>false</FontBold>
     <FontItalic>false</FontItalic>
     <HideTextOnMute>false</HideTextOnMute>
+    <!--Available values: -1 - plNone, 0 - plAfterBack, 1 - plAfterAnimation, 2 - plAfterMeter, 4 - plAfterDigits, 5 - plAfterGlass, 6 - plOnMeterEffect-->
     <LayerIndex>-1</LayerIndex>
   </Text>
   <NotificationText>
@@ -96,11 +131,15 @@
     <Size>0</Size>
     <!--Value format: #AARRGGBB-->
     <Color>#00000000</Color>
+    <!--Available values: 0 - taLeft, 1 - taCenter, 2 - taRight-->
     <Alignment>0</Alignment>
     <FontName></FontName>
     <FontBold>false</FontBold>
     <FontItalic>false</FontItalic>
+    <!--Available values: -1 - plNone, 0 - plAfterBack, 1 - plAfterAnimation, 2 - plAfterMeter, 4 - plAfterDigits, 5 - plAfterGlass, 6 - plOnMeterEffect-->
     <LayerIndex>0</LayerIndex>
   </NotificationText>
-  <Layers/>
+  <Layers>
+    <Layer Enable="true" Image="Meter_Track.svg" X="64" Y="54" LayerIndex="0" Colorize="true" HideOnMute="true"/>
+  </Layers>
 </XMLskinSettings>
